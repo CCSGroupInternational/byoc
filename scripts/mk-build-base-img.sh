@@ -23,4 +23,7 @@ gpg --no-default-keyring --keyring "${SETUP_DIR}/ubuntu-image.gpg" \
     --keyid-format long \
     --verify "${SETUP_DIR}/sources/SHA256SUMS.gpg" "${SETUP_DIR}/sources/SHA256SUMS"
 
-echo Image is OK
+cd "${SETUP_DIR}/sources"
+echo "" #  Improve readability
+sha256sum --ignore-missing --strict -c SHA256SUMS
+
