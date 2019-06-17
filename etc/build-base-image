@@ -1,0 +1,11 @@
+RELEASE_VERSION=18.04
+UPDATE_VERSION=.2
+ARCH=amd64
+
+GPG_KEYSERVER=hkp://keyserver.ubuntu.com
+GPG_SIGNER_KEYS="0x46181433FBB75451 0xD94AA3F0EFE21092"
+GPG=https://cdimage.ubuntu.com/ubuntu-base/releases/18.04/release/SHA256SUMS.gpg
+IMAGE_FILENAME=ubuntu-base-${RELEASE_VERSION}${UPDATE_VERSION}-base-${ARCH}.tar.gz
+IMAGE_URL=http://cdimage.ubuntu.com/ubuntu-base/releases/${RELEASE_VERSION}/release/${IMAGE_FILENAME}
+SHA256SUMS=http://cdimage.ubuntu.com/ubuntu-base/releases/${RELEASE_VERSION}/release/SHA256SUMS
+
