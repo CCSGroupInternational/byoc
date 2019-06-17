@@ -26,4 +26,7 @@ gpg --no-default-keyring --keyring "${SETUP_DIR}/ubuntu-image.gpg" \
 cd "${SETUP_DIR}/sources"
 echo "" #  Improve readability
 sha256sum --ignore-missing --strict -c SHA256SUMS
+untar_filename=$(echo "${IMAGE_FILENAME}" | sed "s#.gz\$##g")
+gzip -dc "${SETUP_DIR}/sources/${IMAGE_FILENAME}" > "${untar_filename}"
+udocker import ${SETUP_DIR}/sources/${untar_filename} build-base
 
