@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -eu
 
 CID=$(udocker create --name=build-tools build-base) # ≃ 62MB
