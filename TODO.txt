@@ -1,0 +1,3 @@
+
+Clean the base image per:
+    https://github.com/cloudfoundry/cflinuxfs3/blob/master/Dockerfile
